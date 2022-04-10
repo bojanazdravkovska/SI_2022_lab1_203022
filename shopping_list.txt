@@ -1,5 +1,5 @@
 eggs x 5
-bread x 1
+bread x 3
 milk x 2
 peanut butter x 1
-coffee x 2
+coffee x 10
