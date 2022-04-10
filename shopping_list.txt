@@ -1,0 +1,5 @@
+eggs
+bread
+milk
+peanut butter
+coffee
