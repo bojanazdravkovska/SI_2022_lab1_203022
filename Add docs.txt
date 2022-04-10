@@ -1,0 +1,213 @@
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~
+$ git clone https://github.com/bojanazdravkovska_SI_2022_lab1_203022
+Cloning into 'bojanazdravkovska_SI_2022_lab1_203022'...
+remote: Not Found
+fatal: repository 'https://github.com/bojanazdravkovska_SI_2022_lab1_203022/' not found
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~
+$ git clone https://github.com/bojanazdravkovska/SI_2022_lab1_203022
+Cloning into 'SI_2022_lab1_203022'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~
+$ cd SI_2022_lab1_203022
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git add shopping_list.txt
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git commit -m "Add 5 items to the shopping list"
+[master ae61bbc] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git commit -a -m "Add quantities to the items."
+[master f6c1546] Add quantities to the items.
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git branch branch1
+g
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git branch branch2
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git log
+commit f6c1546fab6fc3728f70358a3ab9cd6cc6b629ce (HEAD -> master, branch2, branchcommit f6c1546fab6fc3728f70358a3ab9cd6cc6b629ce (HEAD -> master, branch2, branch
+1)
+Author: unknown <zdravkovskabojana5@gmail.com>
+Date:   Sun Apr 10 22:45:18 2022 +0200
+
+    Add quantities to the items.
+
+commit ae61bbcd6ab0c59eccdbe8a0185acdfb7f784c13
+Author: unknown <zdravkovskabojana5@gmail.com>
+Date:   Sun Apr 10 22:44:06 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit c9e3ac394daf9da031b25cbe94f1a4daecc241f8 (origin/master, origin/HEAD)
+Author: bojanazdravkovska <102731411+bojanazdravkovska@users.noreply.github.com>
+Date:   Sun Apr 10 22:35:05 2022 +0200
+
+    Initial commit
+
+commit 27608fa51cf3960eb3302552c20bebbd9ca4752b
+Author: bojanazdravkovska <102731411+bojanazdravkovska@users.noreply.github.com>
+Date:   Sun Apr 10 22:33:52 2022 +0200
+
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 662 bytes | 220.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bojanazdravkovska/SI_2022_lab1_203022
+   c9e3ac3..f6c1546  master -> master
+branch 'master' set up to track 'origin/master'.
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git push origin branch1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/bojanazdravkovska/SI_2022_lab1_203022/pull/new/branch1
+remote:
+To https://github.com/bojanazdravkovska/SI_2022_lab1_203022
+ * [new branch]      branch1 -> branch1
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git push origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/bojanazdravkovska/SI_2022_lab1_203022/pull/new/branch2
+remote:
+To https://github.com/bojanazdravkovska/SI_2022_lab1_203022
+ * [new branch]      branch2 -> branch2
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (branch1)
+$ git commit -a -m "Change quantity of item #5."
+[branch1 7e93827] Change quantity of item #5.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git commit -a -m "Change quantity of number #2."
+[master 9f51ca2] Change quantity of number #2.
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bojanazdravkovska/SI_2022_lab1_203022
+   f6c1546..9f51ca2  master -> master
+branch 'master' set up to track 'origin/master'.
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git push origin branch1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/bojanazdravkovska/SI_2022_lab1_203022
+   f6c1546..7e93827  branch1 -> branch1
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git push origin branch2
+Everything up-to-date
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (branch2)
+$ git commit -a -m "Modify item #4."
+[branch2 48d9600] Modify item #4.
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (branch2)
+$ git log
+commit 48d96005a471521c66fc4df4bf16d46434f4c19e (HEAD -> branch2)
+commit 48d96005a471521c66fc4df4bf16d46434f4c19e (HEAD -> branch2)
+Author: unknown <zdravkovskabojana5@gmail.com>
+Date:   Sun Apr 10 22:53:19 2022 +0200
+
+    Modify item #4.
+
+commit f6c1546fab6fc3728f70358a3ab9cd6cc6b629ce (origin/branch2)
+Author: unknown <zdravkovskabojana5@gmail.com>
+Date:   Sun Apr 10 22:45:18 2022 +0200
+
+    Add quantities to the items.
+
+commit ae61bbcd6ab0c59eccdbe8a0185acdfb7f784c13
+Author: unknown <zdravkovskabojana5@gmail.com>
+Date:   Sun Apr 10 22:44:06 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit c9e3ac394daf9da031b25cbe94f1a4daecc241f8
+Author: bojanazdravkovska <102731411+bojanazdravkovska@users.noreply.github.com>
+Date:   Sun Apr 10 22:35:05 2022 +0200
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (branch2)
+$ git reset --soft HEAD^
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (branch2)
+$ git commit -a -m "Modify item #4 and add item $6."
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git merge branch1
+Already up to date.
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master|MERGING)
+$ git merge branch2
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master|MERGING)
+$ git commit -a -m "Merge branch2 to master"
+[master d137f4f] Merge branch2 to master
+
+zdrav@DESKTOP-F1Q2HRV MINGW64 ~/SI_2022_lab1_203022 (master)
+$
