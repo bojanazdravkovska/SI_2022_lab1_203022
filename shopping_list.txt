@@ -1,5 +1,5 @@
-eggs
-bread
-milk
-peanut butter
-coffee
+eggs x 5
+bread x 1
+milk x 2
+peanut butter x 1
+coffee x 2
